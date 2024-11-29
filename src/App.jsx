@@ -34,7 +34,9 @@ function App() {
         "http://localhost:3000/api/v1/todo",
         newTodo
       );
-      setTodo((prevTodos) => [...prevTodos, response.data]); // Update state
+      // setTodo(response.data);
+      // Update state
+      fetchTodos();
       setTitle(""); // Clear inputs
       setDescription("");
       fetchTodos();
